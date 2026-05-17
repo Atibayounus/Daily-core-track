@@ -1,0 +1,69 @@
+// ================= REMINDER & NOTIFICATION MODULE =================
+
+// Abstract Class
+
+class Reminder
+{
+public:
+    virtual void showReminder() = 0;
+};
+
+
+// ================= STUDY REMINDER =================
+
+class StudyReminder : public Reminder
+{
+public:
+    void showReminder()
+    {
+        cout << "\n===== STUDY REMINDER =====\n";
+
+        cout << "Reminder: Complete your study session today!"
+             << endl;
+    }
+};
+
+
+// ================= EXERCISE REMINDER =================
+
+class ExerciseReminder : public Reminder
+{
+public:
+    void showReminder()
+    {
+        cout << "\n===== EXERCISE REMINDER =====\n";
+
+        cout << "Reminder: Time for exercise and fitness!"
+             << endl;
+    }
+};
+
+
+// ================= DEADLINE REMINDER =================
+
+class DeadlineReminder : public Reminder
+{
+public:
+    void showReminder()
+    {
+        cout << "\n===== DEADLINE REMINDER =====\n";
+
+        cout << "Reminder: Your assignment deadline is near!"
+             << endl;
+    }
+};
+
+
+// ================= WAKE-UP REMINDER =================
+
+class WakeUpReminder : public Reminder
+{
+public:
+    void showReminder()
+    {
+        cout << "\n===== WAKE-UP REMINDER =====\n";
+
+        cout << "Reminder: Wake up early and start your day!"
+             << endl;
+    }
+};
